@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
-  Sensomatt Panel Admin With Django
+  Changing models and add API to this Version
 </tr>
 </table>
 
