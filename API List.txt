@@ -1,0 +1,40 @@
+Notifications(Token) {
+    int NotificationType :{1,2,3,4} ;
+    boolean IsDone ;
+    String SendTime , DoneTime , DateSend , DateDone;
+    String Msg;
+}
+
+Number of Beds(Token) {
+    int BedID ,Patient, BedType :{1,2,3} ;
+    String BedName;
+}
+
+PatientInfo (Token & int PatinetID){
+    String name , history , description , transcription ;
+    float BMI ;
+}
+
+PatientStatus (Token & int BedID) {
+    int status_type : {1,2,3} ;
+    String general_status , image_patient_url (pic1) , risks , alerts;
+}
+
+BedAnalyses(Token & int BedID) {
+    String image_status_url (pic2) , image_analyses_url (pic3) ;
+}
+
+Suggestions(Token & int BedID) {
+    String suggestions ; --> example : "- Reposition every 90 minutes \n- Sleep just on sides \n- Increase protein in food"
+}
+
+BedHistory (Token & int BedID){
+    boolean isExited ;
+    String PatientName , EnterDate , ExitDate ;
+    int PatinetID ;
+}
+
+Dashboard (Token) {
+    String Name  , WorkTime , PersonnelId , ProfilePhoto_url (pic4);
+    int  NumberOfNotification , NumberOfNBed;
+}

@@ -1,0 +1,12 @@
+install python -> python.org
+install django -> cmd -> pip install django
+install django-cleanup -> cmd -> pip install django_cleanup
+install crispy -> cmd -> pip install django-crispy-forms
+install pillow -> cmd -> python -m pip install Pillow
+///install flake8 -> cmd -> python -m pip install flake8
+-> pip install djangorestframework-jsonapi
+
+
+make migrations -> cmd -> python manage.py makemigrations
+migrate -> cmd -> python manage.py migrate
+runserver -> cmd -> python manage.py runserver 8000
